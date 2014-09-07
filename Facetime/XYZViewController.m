@@ -18,12 +18,17 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)CallFacetime:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"facetime://akashkhanolkar@me.com"]];
 }
 
 @end

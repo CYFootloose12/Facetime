@@ -10,4 +10,6 @@
 
 @interface XYZViewController : UIViewController
 
+- (IBAction)CallFacetime:(id)sender;
+
 @end
